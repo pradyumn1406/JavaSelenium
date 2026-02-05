@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite" parallel="tests">
+  <test thread-count="5" name="Test1" >
+    <classes>
+      <class name="org.automation.testNG.distributeParallelExecution.Jadeja"/>
+      <class name="org.automation.testNG.distributeParallelExecution.Rahul"/>
+      <class name="org.automation.testNG.distributeParallelExecution.Rohit"/>
+      <class name="org.automation.testNG.distributeParallelExecution.Virat"/>
+      <class name="org.automation.testNG.distributeParallelExecution.SuryaK"/>
+    </classes>
+  </test> <!-- Test -->
+
+<test thread-count="4" name="Test2">
+    <classes>
+      <class name="org.automation.testNG.distributeParallelExecution.Shami"/>
+      <class name="org.automation.testNG.distributeParallelExecution.Ishan"/>
+      <class name="org.automation.testNG.distributeParallelExecution.Sachin"/>
+      <class name="org.automation.testNG.distributeParallelExecution.Dhoni"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->

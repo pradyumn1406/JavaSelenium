@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+  <test thread-count="5" name="Test">
+  <groups>
+  	<run>
+  		<include name="PanIndia"></include>
+  		<exclude name="Tamil"></exclude>
+  	</run>
+  </groups>
+    <classes>
+      <class name="org.automation.testNG.groupExecution.Varun"/>
+      <class name="org.automation.testNG.groupExecution.Yash"/>
+      <class name="org.automation.testNG.groupExecution.Ranveer"/>
+      <class name="org.automation.testNG.groupExecution.Shahid"/>
+      <class name="org.automation.testNG.groupExecution.Vijay"/>
+      <class name="org.automation.testNG.groupExecution.Sharuk"/>
+      <class name="org.automation.testNG.groupExecution.Salman"/>
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
