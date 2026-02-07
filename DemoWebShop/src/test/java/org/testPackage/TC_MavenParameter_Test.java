@@ -11,7 +11,7 @@ import org.testng.annotations.Test;
 public class TC_MavenParameter_Test {
 	
 	@Test
-	public void mavenPrameter(){
+	public void mavenPrameter() throws InterruptedException{
 	WebDriver driver= new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
@@ -20,7 +20,9 @@ public class TC_MavenParameter_Test {
 	
 	String data = System.getProperty("data");
 	driver.findElement(By.name("q")).sendKeys(data,Keys.ENTER);
-		
+	Thread.sleep(5000);
+	driver.quit();
+	
 	}
 
 }

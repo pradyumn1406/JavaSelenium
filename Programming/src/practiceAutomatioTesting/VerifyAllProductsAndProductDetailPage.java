@@ -35,7 +35,7 @@ public class VerifyAllProductsAndProductDetailPage {
 
 		driver.findElement(By.xpath("//p[text()='Blue Top']/../../..//a[text()='View Product']")).click();
 
-		WebElement productName = driver.findElement(By.xpath("//h2[text() = 'Blue Top']"));
+                	WebElement productName = driver.findElement(By.xpath("//h2[text() = 'Blue Top']"));
 		if (productName.isDisplayed()) {
 			System.out.println("Product Name is Correct");
 		} else {
